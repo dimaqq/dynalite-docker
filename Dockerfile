@@ -1,10 +1,10 @@
 FROM node:alpine
 
-RUN apk add --no-cache python make g++
-
 COPY package.json package-lock.json /
 
-RUN npm ci
+RUN apk add --no-cache --virtual /build python make g++ &&\
+    npm ci &&\
+    apk del --virtual /build
 
 EXPOSE 8000
 
