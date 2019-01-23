@@ -22,6 +22,6 @@ Integration into docker-compose:
 
 Notes:
 
-> Please ignore the deprecation warnings during buid
-> leveldown@5.0.0 should address those
+> Please ignore the deprecation warnings during build\
+> leveldown@5.0.0 should address those\
 > dynalite@next will eventually pull in new leveldown
