@@ -12,7 +12,13 @@ Example use:
 docker pull dimaqq/dynalite
 ```
 
-Integration into docker-compose:
+Persistent data mode:
+
+```
+docker run --init -p 8000:8000 -v /tmp/somewhere:/data dimaqq/dynalite:latest --path /data
+```
+
+Integration into docker-compose, for automated tests:
 
 ```yaml
   dynalite:
