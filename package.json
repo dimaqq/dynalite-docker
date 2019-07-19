@@ -5,7 +5,7 @@
     "dynalite@next will eventually pull in new leveldown"
   ],
   "dependencies": {
-    "dynalite": "^2.2.0"
+    "dynalite": "^2.3.2"
   },
   "devDependencies": {}
 }
