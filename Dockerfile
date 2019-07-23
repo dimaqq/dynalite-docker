@@ -1,4 +1,5 @@
-FROM node:alpine
+# Node 11 until dynalite is upgraded to leveldown^5 #2 mhart/dynalite#112
+FROM node:11-alpine
 
 COPY package.json package-lock.json /
 
