@@ -38,7 +38,12 @@ Testing or building locally:
       - "8000:8000"
 ```
 
-Notes:
+## Changes
+
+* `3.0.0`: Node 12, `dynalite=3.0.0`
+* `2.3.0`: Node 11, `dynalite=2.3.0`
+
+### 2.x Notes:
 
 > Please ignore the deprecation warnings during build\
 > leveldown@5.0.0 should address those\
