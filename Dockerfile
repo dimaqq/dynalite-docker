@@ -1,9 +1,9 @@
 # Node 11 until dynalite is upgraded to leveldown^5 #2 mhart/dynalite#112
-FROM node:12-alpine
+FROM node:14.5.0-alpine3.12
 
 COPY package.json package-lock.json /
 
-RUN apk add --no-cache --upgrade --virtual /build python make g++ &&\
+RUN apk add --no-cache --upgrade --virtual /build make g++ &&\
     npm ci &&\
     apk del /build
 
