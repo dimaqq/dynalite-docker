@@ -1,7 +1,7 @@
-# Node 11 until dynalite is upgraded to leveldown^5 #2 mhart/dynalite#112
-FROM node:14.5.0-alpine3.12
+FROM node:16.3.0-alpine3.11
 
-COPY package.json package-lock.json /
+WORKDIR /app
+COPY package.json package-lock.json /app
 
 RUN apk add --no-cache --upgrade --virtual /build make g++ &&\
     npm ci &&\
@@ -9,4 +9,4 @@ RUN apk add --no-cache --upgrade --virtual /build make g++ &&\
 
 EXPOSE 8000
 
-ENTRYPOINT ["node", "node_modules/.bin/dynalite", "--createTableMs", "0", "--deleteTableMs", "0", "--updateTableMs", "0", "--port", "8000"]
+ENTRYPOINT ["node", "app/node_modules/.bin/dynalite", "--createTableMs", "0", "--deleteTableMs", "0", "--updateTableMs", "0", "--port", "8000"]
