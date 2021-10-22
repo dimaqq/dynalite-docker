@@ -1,7 +1,7 @@
-FROM node:16.3.0-alpine3.11
+FROM node:17-alpine3.12
 
 WORKDIR /app
-COPY package.json package-lock.json /app
+COPY package.json package-lock.json /app/
 
 RUN apk add --no-cache --upgrade --virtual /build make g++ &&\
     npm ci &&\
