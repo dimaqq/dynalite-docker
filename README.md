@@ -41,6 +41,7 @@ Testing or building locally:
 ```
 
 ## Changes
+* `3.2.1`: Node 17, `dynalite=3.2.1`
 * `3.2.1`: Node 14, `dynalite=3.2.1`
 * `3.0.0`: Node 12, `dynalite=3.0.0`
 * `2.3.0`: Node 11, `dynalite=2.3.0`
