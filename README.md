@@ -1,7 +1,6 @@
 # Dynalite Docker Image
 
-https://scarf.sh/gateway/dimaqq/docker/dimaqq/dynalite
-(or just https://hub.docker.com/r/dimaqq/dynalite/)
+https://github.com/dimaqq/dynalite-docker/pkgs/container/dynalite
 
 Docker container for latest `dynalite` (https://github.com/mhart/dynalite).
 
@@ -10,8 +9,7 @@ With sane default settings: port 8000 and no artificial delay.
 Example use:
 
 ```
-docker pull dimaqq.docker.scarf.sh/dimaqq/dynalite
-# or just docker pull dimaqq/dynalite
+docker pull ghcr.io/dimaqq/dynalite
 ```
 
 Persistent data mode:
@@ -45,6 +43,11 @@ Testing or building locally:
 * `3.2.1`: Node 14, `dynalite=3.2.1`
 * `3.0.0`: Node 12, `dynalite=3.0.0`
 * `2.3.0`: Node 11, `dynalite=2.3.0`
+
+## Arch
+
+* `amd64`
+* `arm64`
 
 ### 2.x Notes:
 
