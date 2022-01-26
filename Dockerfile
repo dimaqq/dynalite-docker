@@ -1,11 +1,14 @@
+# syntax=docker/dockerfile:1.3-labs
 FROM node:17-alpine3.14
 
 WORKDIR /app
 COPY package.json package-lock.json /app/
 
-RUN apk add --no-cache --upgrade --virtual /build make g++ &&\
-    npm ci &&\
-    apk del /build
+RUN <<EOF
+  apk add --no-cache --upgrade --virtual /build make g++
+  npm ci
+  apk del /build
+EOF
 
 EXPOSE 8000
 
