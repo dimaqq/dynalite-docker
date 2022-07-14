@@ -15,14 +15,14 @@ docker pull ghcr.io/dimaqq/dynalite
 Persistent data mode:
 
 ```
-docker run --init -p 8000:8000 -v /tmp/somewhere:/data dimaqq/dynalite:latest --path /data
+docker run --init -p 8000:8000 -v /tmp/somewhere:/data ghcr.io/dimaqq/dynalite --path /data
 ```
 
 Integration into docker-compose, for automated tests:
 
 ```yaml
   dynalite:
-    build: dimaqq/dynalite
+    image: ghcr.io/dimaqq/dynalite
     init: true
     ports:
       - "8000:8000"
