@@ -1,5 +1,17 @@
 # Dynalite Docker Image
 
+TL;DR:
+
+```
+docker pull ghcr.io/dimaqq/dynalite
+```
+
+## Maintainer wanted
+
+Sadly I don't use this image/protocol/k-v store, it would be awesome if someone stepped in to maintain 🙏
+
+## Details
+
 https://github.com/dimaqq/dynalite-docker/pkgs/container/dynalite
 
 Docker container for latest `dynalite` (https://github.com/mhart/dynalite).
