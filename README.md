@@ -14,7 +14,7 @@ Sadly I don't use this image/protocol/k-v store, it would be awesome if someone 
 
 https://github.com/dimaqq/dynalite-docker/pkgs/container/dynalite
 
-Docker container for latest `dynalite` (https://github.com/mhart/dynalite).
+Docker container for latest `dynalite` (https://github.com/architect/dynalite , formerly https://github.com/mhart/dynalite).
 
 With sane default settings: port 8000 and no artificial delay.
 
@@ -52,8 +52,8 @@ Testing or building locally:
 
 ## Changes
 
-* `3.2.2`: Node 18, `dynalite=3.2.2`
-* `3.2.1`: Node 17, `dynalite=3.2.1`
+* `3.2.2`: Node 21, `dynalite=3.2.2`
+* `3.2.1`: Node 18, `dynalite=3.2.1`
 * `3.2.1`: Node 14, `dynalite=3.2.1`
 * `3.0.0`: Node 12, `dynalite=3.0.0`
 * `2.3.0`: Node 11, `dynalite=2.3.0`
@@ -62,9 +62,3 @@ Testing or building locally:
 
 * `amd64`
 * `arm64`
-
-### 2.x Notes:
-
-> Please ignore the deprecation warnings during build\
-> leveldown@5.0.0 should address those\
-> dynalite@next will eventually pull in new leveldown
