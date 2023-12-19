@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "dynalite": "^3.2.1"
+    "dynalite": "^3.2.2"
   },
   "devDependencies": {}
 }
